@@ -1,4 +1,4 @@
-.plus-button, .plus-minus {
+.plus-button, .minus-button, .reset-button {
     background-color: #4CAF50; 
     border: none; 
     color: white; 
@@ -14,7 +14,7 @@
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
-  .plus-button:hover, .plus-minus:hover {
+  .plus-button:hover, .minus-button:hover, .reset-button:hover {
     background-color: #45a049; 
   }
   

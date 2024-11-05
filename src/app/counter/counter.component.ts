@@ -15,4 +15,8 @@ export class CounterComponent {
   public onClickMinus() {
     this.count -=1;
   }
+
+  public onClickReset(){
+    this.count = 0;
+  }
 }
