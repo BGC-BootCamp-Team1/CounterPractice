@@ -1,3 +1,6 @@
+.counter-group{
+    text-align: center;
+}
 .create-button, .reset-all-button {
     background-color: #784cafdc; 
     border: none; 

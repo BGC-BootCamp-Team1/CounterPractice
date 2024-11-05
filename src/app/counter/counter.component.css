@@ -1,3 +1,6 @@
+.counter{
+    text-align: center;
+}
 .plus-button, .minus-button, .reset-button {
     background-color: #4CAF50; 
     border: none; 
