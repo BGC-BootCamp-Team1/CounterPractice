@@ -1,0 +1,7 @@
+<button (click)="OnClickCreate()">Create counter</button>
+<div *ngFor="let counter of displayCounters"
+>
+<app-counter ></app-counter>
+</div>
+<button class = "sum-layout"
+> number : {{displayCounters.length}}</button>
