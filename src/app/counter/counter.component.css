@@ -32,3 +32,9 @@
 .hidden {
     visibility: hidden; 
   }
+.red-bg{
+    background-color: red;
+}
+.green-bg{
+    background-color: green;
+}
