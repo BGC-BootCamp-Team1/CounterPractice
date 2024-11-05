@@ -1,5 +1,5 @@
 .create-button, .reset-all-button {
-    background-color: #784caf; 
+    background-color: #784cafdc; 
     border: none; 
     color: white; 
     padding: 15px 32px; 
@@ -15,7 +15,7 @@
   }
   
   .create-button:hover, .reset-all-button:hover{
-    background-color: #784cafdc; 
+    background-color: #784caf; 
   }
   
   .sum-layout{

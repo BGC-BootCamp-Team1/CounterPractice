@@ -1,13 +1,11 @@
-<button class = "create-button" (click)="OnClickCreate()">Create counter</button>
-<div *ngFor="let counter of counters"
->
-<app-counter 
-[count]="counter.count"
-(countChange)="updateCount(counter.id, $event)">
-></app-counter>
+<button class="create-button" (click)="OnClickCreate()">Create counter</button>
+<div *ngFor="let counter of counters">
+  <app-counter
+    [count]="counter.count"
+    (countChange)="updateCount(counter.id, $event)"
+  >
+    ></app-counter
+  >
 </div>
-<button class = "sum-layout"
-> Sum : {{total}}</button>
-<button class = "reset-all-button" 
-(click)="onClickReset()"
-> Reset All</button>
+<button class="sum-layout">Sum : {{ total }}</button>
+<button class="reset-all-button" (click)="onClickReset()">Reset All</button>
