@@ -23,4 +23,9 @@ export class CounterGroupComponent {
       counter.count = newCount;
     }
   }
+  onClickReset(){
+    this.counters.forEach(counter => {
+      counter.count = 0
+    });
+  }
 }

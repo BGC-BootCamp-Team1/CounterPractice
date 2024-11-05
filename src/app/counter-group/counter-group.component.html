@@ -1,4 +1,4 @@
-<button (click)="OnClickCreate()">Create counter</button>
+<button class = "create-button" (click)="OnClickCreate()">Create counter</button>
 <div *ngFor="let counter of counters"
 >
 <app-counter 
@@ -8,3 +8,6 @@
 </div>
 <button class = "sum-layout"
 > Sum : {{total}}</button>
+<button class = "reset-all-button" 
+(click)="onClickReset()"
+> Reset All</button>
