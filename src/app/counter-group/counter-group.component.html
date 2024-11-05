@@ -1,7 +1,10 @@
 <button (click)="OnClickCreate()">Create counter</button>
-<div *ngFor="let counter of displayCounters"
+<div *ngFor="let counter of counters"
 >
-<app-counter ></app-counter>
+<app-counter 
+[count]="counter.count"
+(countChange)="updateCount(counter.id, $event)">
+></app-counter>
 </div>
 <button class = "sum-layout"
-> number : {{displayCounters.length}}</button>
+> Sum : {{total}}</button>

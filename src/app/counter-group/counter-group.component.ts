@@ -6,14 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './counter-group.component.css'
 })
 export class CounterGroupComponent {
-  displayCounters: string[] = ['Counter'];
   counters = [
-    { id: 1, count: 0 },
-    { id: 2, count: 0 },
-    { id: 3, count: 0 }
+    { id: 1, count: 0 }
   ];
+  get total(): number {
+    return this.counters.reduce((sum, counter) => sum + counter.count, 0);
+  }
 
   public OnClickCreate(){
-    this.displayCounters.push('Counter')
+    this.counters.push({ id: this.counters.length+1, count: 0 })
+  }
+
+  updateCount(id: number, newCount: number) {
+    const counter = this.counters.find(counter => counter.id === id);
+    if (counter) {
+      counter.count = newCount;
+    }
   }
 }
