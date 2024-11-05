@@ -1,4 +1,10 @@
-<button class = "plus-button" (click)="onClickPlus()"> + </button>
+<button class = "plus-button" 
+(click)="onClickPlus()"
+[ngClass]="{ 'hidden': count > 10 }"
+> + </button>
 <button class = "number-layout"> number : {{count}}</button>
 <!-- <input type="text" [(ngModel)]="count"/> -->
-<button class = "plus-minus" (click)="onClickMinus()"> - </button>
+<button class = "plus-minus" 
+(click)="onClickMinus()"
+[ngClass]="{ 'hidden': count < 0 }"
+> - </button>

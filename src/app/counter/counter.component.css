@@ -9,7 +9,9 @@
     font-size: 16px; 
     margin: 4px 2px; 
     cursor: pointer; 
-    border-radius: 12px; /
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .plus-button:hover, .plus-minus:hover {
@@ -25,4 +27,8 @@
     border-radius: 8px; 
     background-color: #f9f9f9; 
     display: inline-block;
+  }
+
+.hidden {
+    visibility: hidden; 
   }
