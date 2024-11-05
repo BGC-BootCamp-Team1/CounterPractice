@@ -1,21 +1,17 @@
-<button
-  class="plus-button"
-  (click)="onClickPlus()"
-  [ngClass]="{ hidden: count > 10 }"
->
-  +
-</button>
-<button
-  class="number-layout"
-  [ngClass]="{ 'red-bg': count > 10, 'green-bg': count < 0 }"
->
-  number : {{ count }}
-</button>
-<button
-  class="minus-button"
-  (click)="onClickMinus()"
-  [ngClass]="{ hidden: count < 0 }"
->
-  -
-</button>
-<button class="reset-button" (click)="onClickReset()">Reset</button>
+<div class="counter">
+  <button
+    class="plus-button"
+    (click)="onClickPlus()"
+    [ngClass]="{ hidden: count > 10 }"
+  > + </button>
+  <button
+    class="number-layout"
+    [ngClass]="{ 'red-bg': count > 10, 'green-bg': count < 0 }"
+  >number : {{ count }}</button>
+  <button
+    class="minus-button"
+    (click)="onClickMinus()"
+    [ngClass]="{ hidden: count < 0 }"
+  > - </button>
+  <button class="reset-button" (click)="onClickReset()">Reset</button>
+</div>
