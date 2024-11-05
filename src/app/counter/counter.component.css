@@ -1,0 +1,28 @@
+.plus-button, .plus-minus {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; /
+  }
+  
+  .plus-button:hover, .plus-minus:hover {
+    background-color: #45a049; 
+  }
+  
+  .number-layout {
+    font-size: 18px; 
+    color: #333; 
+    padding: 10px; 
+    margin: 4px 2px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    display: inline-block;
+  }
